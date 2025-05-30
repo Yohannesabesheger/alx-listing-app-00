@@ -19,19 +19,19 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
 
   return (
     <div className="border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-      <div className="relative">
-        <img
-          src={image}
-          alt={name}
-          className="w-full h-48 object-cover"
-          loading="lazy"
-        />
-        {discount && (
-          <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-xs font-semibold rounded">
-            {discount}% OFF
-          </span>
-        )}
-      </div>
+    <div className="relative">
+      <img
+        src="/assets/image/home.png"
+        alt={name}
+        className="w-full h-48 object-cover"
+        loading="lazy"
+      />
+      {discount && (
+        <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-xs font-semibold rounded">
+        {discount}% OFF
+        </span>
+      )}
+    </div>
       <div className="p-4">
         <h2 className="text-xl font-semibold mb-1">{name}</h2>
         <p className="text-sm text-gray-600 mb-2">
